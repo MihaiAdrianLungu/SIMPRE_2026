@@ -18,7 +18,7 @@ const RecordForm = ({ data , onSubmit}) => {
     return <form onSubmit={handleSubmit} className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
         <label htmlFor="name" className="font-medium">
-            Name
+            Name*
         </label>
         <input
           id="name"
@@ -33,7 +33,7 @@ const RecordForm = ({ data , onSubmit}) => {
 
       <div className="flex flex-col gap-1">
         <label htmlFor="type" className="font-medium">
-          Type
+          Type*
         </label>
         <input
           id="type"
@@ -47,7 +47,7 @@ const RecordForm = ({ data , onSubmit}) => {
 
       <div className="flex flex-col gap-1">
         <label htmlFor="description" className="font-medium">
-          Description
+          Description*
         </label>
         <textarea
           id="description"
@@ -56,6 +56,7 @@ const RecordForm = ({ data , onSubmit}) => {
           onChange={handleChange}
           className="border rounded px-3 py-2"
           rows={3}
+          required
         />
       </div>
 
